@@ -1,0 +1,38 @@
+<h2>
+  英雄列表</h2>
+
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <!-- <li *ngFor="let hero of heroes" (click)="selectHero(hero)" [class.selected]="selectedHero === hero"
+  routerLink="/detail/{{hero.id}}">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li> -->
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+  </li>
+</ul>
+
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
+
+<!-- <ul>
+  <li *ngFor="let hero of heros" (click)="selectHero(hero)" [class.current]="selectedHero === hero">
+    {{hero.id}}-{{hero.name}}
+  </li>
+</ul> -->
+<!-- <div *ngIf="selectedHero">
+  <div>选择英雄：</div><div (click)="clearSelected()">清空选择</div>
+  <h2>{{selectedHero.id}} -{{selectedHero.name | uppercase}}</h2>
+</div> -->
+
+
+
+
+<!-- <p> {{hero.id}}</p>
+<h2>{{hero.name | uppercase}}</h2>
+ <div>
+    <label>name:
+      <input [(ngModel)]="hero.name"  >
+    </label>
+</div> -->

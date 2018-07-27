@@ -1,0 +1,3 @@
+strive vi. 努力；奋斗；抗争
+application-wide  程序范围 全应用类 应用类型
+excerpt  n. 摘录，引用 vt. 引用，摘录 vi. 摘录，引用
