@@ -45,3 +45,6 @@ Thumbs.db
 
 #log
 *.log
+
+
+package-lock.json
