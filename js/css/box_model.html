@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box_model</title>
+</head>
+
+<body>
+    <div class="c1 c2 c3 c4" id="super_box">
+        super_box
+        <div id="sub_box">
+            sub_box
+        </div>
+    </div>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #super_box {
+        width: 20rem;
+        height: 10rem;
+        background: #999;
+        border: 1rem solid #888;
+        padding: 1rem;
+        position: relative;
+    }
+
+    #sub_box {
+        position: absolute;
+        width: 8rem;
+        height: 4rem;
+        background: #666;
+        border: 1rem solid #555;
+        padding: 1rem;
+        margin: 1rem;
+    }
+</style>
+
+</html>

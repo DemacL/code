@@ -1,0 +1,8 @@
+// source global lastIndex ignoreCase multiline
+
+// methods:exec test
+
+// exec 总是返回某次匹配的完整信息
+// string match 与regexp exec差别: 只有在没有全局标志g情况下，才会返回第一次匹配的完整信息，否则返回匹配结果组成的数组
+
+// 结合 lastIndex 反复调用exec

@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS DEMO</title>
+</head>
+
+<body>
+    <div id="relative-box">
+        relative
+    </div>
+    <div id="absolute-parent-box">
+        <div id="absolute-box">
+            absolute
+        </div>
+    </div>
+
+    <div id="fix-p"> fixed</div>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #relative-box {
+        width: 5rem;
+        height: 5rem;
+        background: #666;
+        text-align: center;
+        line-height: 5rem;
+        top: 5rem;
+        left: 5rem;
+        position: relative;
+    }
+
+    #absolute-box {
+        width: 5rem;
+        height: 5rem;
+        background: #666;
+        text-align: center;
+        line-height: 5rem;
+        top: 5rem;
+        left: 5rem;
+        position: absolute;
+    }
+
+    #absolute-parent-box {
+        width: 10rem;
+        height: 10rem;
+        background: #555;
+        text-align: center;
+        line-height: 10rem;
+        top: 10rem;
+        left: 10rem;
+        position: relative;
+    }
+
+
+    #fix-p {
+        bottom: 0px;
+        background: #333;
+        text-align: center;
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+</style>
+
+</html>
