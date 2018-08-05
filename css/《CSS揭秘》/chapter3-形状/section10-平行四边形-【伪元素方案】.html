@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="div1">
+        平行四边形
+
+    </div>
+
+
+</body>
+
+<style>
+    .div1 { 
+        width: 150px;
+        height: 2rem;
+        line-height: 2rem; 
+        display: inline-block;
+        text-align: center;
+        position: relative;
+    }
+
+    .div1::before {
+        background: #58a;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        transform: skewX(-45deg);
+    }
+</style>
+
+</html

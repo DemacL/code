@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>Yes!</button>
+    <button class="ok">OK!</button>
+
+    <button class="cancel">Cancel!</button>
+
+    <input />
+</body>
+<style>
+    input {
+        font: inherit;
+    }
+
+    button {
+        padding: .3em .8em;
+        border: 1px solid rgba(0, 0, 0, .1);
+        background: #58a linear-gradient(hsla(0, 0%, 100%, .2), transparent);
+        border-radius: .2em;
+        box-shadow: 0 0.05em 0.25em rgba(0, 0, 0, .5);
+        color: white;
+        text-shadow: 0 -0.05em 0.25em rgba(0, 0, 0, .5);
+        /* padding: .3em .8em;
+        border: 1px solid #446d88;
+        background: #58a linear-gradient(#77a0bb, #58a);
+        border-radius: .2em;
+        box-shadow: 0 0.05em 0.25em grey;
+        color: white;
+        text-shadow: 0 -0.05em 0.25em #335166; */
+        /* h-shadow v-shadow blur color; */
+        font-size: 125%;
+        /* 假设父级字号是16px 则125%为20px*/
+        /*  font-size: 20px; */
+        line-height: 1.5;
+        /* (1.5 * font-size )*/
+        /*line-height: 30px;*/
+    }
+
+    button.ok {
+        background-color: #c00;
+    }
+
+    button.cancel {
+        background-color: #6b0;
+    }
+</style>
+
+</html>
