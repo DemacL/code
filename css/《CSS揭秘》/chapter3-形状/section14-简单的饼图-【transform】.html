@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="pie1">
+    </div>
+
+    <div class="pie1 pie2">
+    </div>
+
+    <div class="pie1 pie2 pie3">
+    </div>
+    <div class="pie1 pie2 pie4">
+    </div>
+    <div class="pie1 pie2 pie5">
+    </div>
+    <div class="pie1 pie2 pie6">
+    </div>
+    <div class="pie1 pie2 pie7">
+    </div>
+
+    <div class="pie1 pie2 pie8">
+    </div>
+
+    <div class="pie1 pie2 pie9">
+    </div>
+
+    <div class="piee" style="animation-delay: -20s">
+        20%
+    </div>
+
+    <div class="piee" style="animation-delay: -60s">
+        60%
+    </div>
+
+</body>
+
+<style>
+    .pie1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: yellowgreen;
+        display: inline-block;
+    }
+
+    .pie2 {
+        background-image: linear-gradient(to right, transparent 50%, #655 0);
+    }
+
+    .pie3::before,
+    .pie4::before,
+    .pie5::before,
+    .pie6::before,
+    .pie7::before,
+    .pie8::before,
+    .pie9::before,
+    .pie10::before,
+    .pie11::before {
+        content: '';
+        display: block;
+        margin-left: 50%;
+        height: 100%;
+        border-radius: 0 100% 100% 0/ 50%;
+        /* background: inherit; */
+        background-color: inherit;
+        transform-origin: left;
+    }
+
+    .pie3::before {
+        transform: rotate(.3turn);
+    }
+
+    .pie4::before {
+        transform: rotate(.4turn);
+    }
+
+    .pie5::before {
+        transform: rotate(.5turn);
+    }
+
+    .pie6::before {
+        transform: rotate(.6turn);
+    }
+
+    .pie7::before {
+        transform: rotate(.7turn);
+    }
+
+    .pie8::before {
+        background: #655;
+        transform: rotate(.1turn);
+    }
+
+    .pie9::before {
+        background: #655;
+        transform: rotate(.25turn);
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(.5turn);
+        }
+    }
+
+    @keyframes bg {
+        50% {
+            background: #655;
+        }
+    }
+ 
+    .piee {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: yellowgreen; 
+        background-image: linear-gradient(to right, transparent 50%, #655 0);
+        text-align: center;
+        line-height: 100px;
+        display: inline-block;
+    }
+
+    .piee::before  {
+        content: ''; 
+        position: absolute;
+        animation: spin 50s linear infinite,
+        bg 100s step-end infinite;
+      
+        border-radius: 0 100% 100% 0/ 50%;
+        background-color: inherit;
+        transform-origin: left;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        animation-play-state: paused;
+        animation-delay: inherit;
+    }
+</style>
+
+</html
