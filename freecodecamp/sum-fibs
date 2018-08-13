@@ -1,0 +1,12 @@
+   function sumFibs(maxnum) {
+            let a = 1;
+            let b = 1;
+            let sum = 1;
+            while (b <= maxnum) {
+                if (b % 2 === 1) {
+                    sum += b;
+                }
+                [a, b] = [b, a + b];
+            }
+            return sum;
+        }
