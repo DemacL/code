@@ -1,4 +1,5 @@
  ### 样式优先级 ###
-* 1.行内
-* 2.id
-* 3.class  不同class以最后一个为准
+* !important
+* 行内
+* id
+* class  不同class以最后一个为准
