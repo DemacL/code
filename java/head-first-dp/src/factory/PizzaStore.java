@@ -1,5 +1,12 @@
 package factory;
 
+/**
+ * 创建者类 Creator
+ * 抽象创建者类 --PizzaStore
+ * 定义一个抽象的工厂方法----createPizza
+ * 让子类实现此方法制造对象
+ * 工厂方法让类把示例化推迟到子类
+ */
 public abstract class PizzaStore {
 
 //    SimplePizzaFactory simplePizzaFactory;
@@ -13,7 +20,6 @@ public abstract class PizzaStore {
         Pizza pizza;
 //        pizza =simplePizzaFactory.createPizza(type);
         pizza = createPizza(type);
-        pizza.prepare();
 
         return pizza;
     }

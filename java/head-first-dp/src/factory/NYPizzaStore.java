@@ -1,5 +1,8 @@
 package factory;
 
+/**
+ * 具体创建者类
+ */
 public class NYPizzaStore extends  PizzaStore{
 
 
@@ -13,7 +16,7 @@ public class NYPizzaStore extends  PizzaStore{
         Pizza pizza = null;
 
         if (type.equals("cheese")) {
-            pizza = new CheesePizza();
+            pizza = new NYStyleCheesePizza();
         } else if (type.equals("pepperoni")) {
             pizza = new PepperoniPizza();
         } else if (type.equals("clam")) {
