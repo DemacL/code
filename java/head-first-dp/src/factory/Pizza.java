@@ -16,17 +16,23 @@ public abstract class Pizza {
     // 酱料类型
     String sause;
 
+    /**
+     * 奶酪
+     */
+    Cheese cheese;
+
     ArrayList toppings = new ArrayList();
 
-    void prepare() {
-        System.out.println("Preparing " + name);
-        System.out.println("Tossing dough...");
-        System.out.println("Adding sause...");
-        System.out.println("Adding toppings:");
-        for (int i = 0; i < toppings.size(); i++) {
-            System.out.println("  " + toppings.get(i));
-        }
-    }
+//    void prepare() {
+//        System.out.println("Preparing " + name);
+//        System.out.println("Tossing dough...");
+//        System.out.println("Adding sause...");
+//        System.out.println("Adding toppings:");
+//        for (int i = 0; i < toppings.size(); i++) {
+//            System.out.println("  " + toppings.get(i));
+//        }
+//    }
+    abstract void prepare();
 
     void bake() {
         System.out.println("pizza Bake for 25 minutes at 350");

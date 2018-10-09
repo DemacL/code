@@ -10,4 +10,9 @@ public class NYStyleCheesePizza extends  Pizza {
         toppings.add("1.NYStyleCheese Grated Reggiano Cheese");
         toppings.add("2.NYStyleCheese Grated Reggiano Cheese");
     }
+
+    @Override
+    void prepare() {
+
+    }
 }
