@@ -9,7 +9,7 @@
  
  1. Java中的this依赖于函数的声明,JavaScript中的this依赖于函数的调用方式
  2. js中的this=>**调用上下文**
- 3. 不需要创建单独的函数副本,就可以在不同的对象山完成完全相同的处理过程 
+ 3. 不需要创建单独的函数副本,就可以在不同的对象上完成完全相同的处理过程 
       ``` javascript
        function f(){console.log(this.val)} 
        o1 = {fuc:f,val:'o1'};
