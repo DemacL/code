@@ -1,8 +1,10 @@
- ``` javascript
-	function hw2(s){
+
+function hw2(s){
 	return s === s.split('').reverse().join('')
-	}
-	function hw(s){
+}
+
+
+function hw(s){
 	console.log(s);
 	if(s.length<=1) return true;
 
@@ -12,5 +14,5 @@
 		return false;	
 	}
 
-	} 
- ```
+} 
+
