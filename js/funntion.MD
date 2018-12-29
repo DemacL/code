@@ -13,4 +13,4 @@
     ``` function f(){console.log(this.val)} 
        o1 = {fuc:f,val:'o1'};
        o2 = {fuc:f,val:'o2'};
-       console.log(o1.fuc(),o2.fuc())```
+       console.log(o1.fuc(),o2.fuc()) ```
