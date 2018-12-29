@@ -2,8 +2,7 @@
 function hw2(s){
 	return s === s.split('').reverse().join('')
 }
-
-
+ 
 function hw(s){
 	console.log(s);
 	if(s.length<=1) return true;
