@@ -11,8 +11,8 @@
  2. js中的this=>**调用上下文**
  3. 不需要创建单独的函数副本,就可以在不同的对象上完成完全相同的处理过程 
       ``` javascript
-       function f(){console.log(this.val)} 
-       o1 = {fuc:f,val:'o1'};
-       o2 = {fuc:f,val:'o2'};
-       console.log(o1.fuc(),o2.fuc())
+      function f(){return this.val} 
+      o1 = {fuc:f,val:'o1'}; 
+      o2 = {fuc:f,val:'o2'}; 
+      console.log(o1.fuc(),o2.fuc()) // o1 o2
        ```
