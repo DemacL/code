@@ -4,3 +4,7 @@
 + 作为构造器调用 返回一个对象  `new FunctionName()`
 + `apply call`  `functionName.call(newThis,,,,,)   functionName.call(newThis, [])`
  
+ 
+ 
+ 
+ 1. Java中的this依赖于函数的声明,JavaScript中的this依赖于函数的调用方式
