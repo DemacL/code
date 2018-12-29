@@ -8,3 +8,4 @@
  
  
  1. Java中的this依赖于函数的声明,JavaScript中的this依赖于函数的调用方式
+ 2. js中的this=>**调用上下文**
