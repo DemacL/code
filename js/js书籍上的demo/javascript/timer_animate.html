@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"> </div>
+    <script>
+
+        function animate(elemId) {
+
+            const boxElem = document.getElementById(elemId)
+
+
+            let tick = 0;
+
+            const timer = setInterval(() => {
+                if (tick < 100) {
+                    boxElem.style.left = tick++ + 'px';
+                } else {
+                    clearInterval(timer);
+                    console.table({ timer, tick, boxElem });
+                }
+            }, 10);
+
+        }
+
+        animate('box');
+    </script>
+</body>
+
+</html>
