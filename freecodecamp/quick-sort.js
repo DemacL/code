@@ -22,3 +22,25 @@
             }
         }
         console.log(qsort(nums));
+
+// --------
+function quickSort(arr) {
+  if(arr.length > 0){
+	let anchor = arr[0];
+	let smaller = [];
+	let bigger = [];
+
+	for(let i=1;i<arr.length;i++){
+		if(arr[i] < anchor){
+			smaller.push(arr[i]);	
+        }else{
+        	bigger.push(arr[i]);	
+		}
+
+	}
+	return [...quickSort(smaller), anchor,...quickSort(bigger)]
+}else{
+	return [];
+}
+
+}

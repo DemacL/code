@@ -1,7 +1,5 @@
 # JsNote
-js 随手笔记
-
-
+  
 git push http需要密码验证
 可配置成SSH,将电脑生成的ssh可以添加到github的setting里面
 
