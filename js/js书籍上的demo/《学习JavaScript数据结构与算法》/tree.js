@@ -26,6 +26,23 @@ function BinarySearchTree() {
         }
     }
 
+    /** 添加childnode到node节点上 */
+    this.appendNode = function (node, childnode) {
+        if (childnode.key < node.key) {
+            if (node.left) {
+                this.appendNode(node.left, childnode);
+            } else {
+                node.left = childnode
+            }
+        } else {
+            if (node.right) {
+                this.appendNode(node.right, childnode);
+            } else {
+                node.right = childnode;
+            }
+        }
+    }
+
     /** 搜索节点键 */
     this.search = function (key) {
 
@@ -70,7 +87,7 @@ function BinarySearchTree() {
     }
 
     this.inTraverse = function (node) {
-        
+
         if (node) {
             // console.log(node.key);
             this.inTraverse(node.left);
@@ -104,6 +121,8 @@ function BinarySearchTree() {
     }
 
 
+
+    /** 这个实现有问题 需要调整  删除节点有左右节点  需要从右侧子数中找到最小值替换上去 */
     this.remove = function (key) {
         let node = root;
         let parentNode = root;
@@ -111,36 +130,43 @@ function BinarySearchTree() {
         while (node) {
             if (node.key === key) {
 
-                if(node === root){ //删除根结点 把左子树代替上去
-                    if(node.left){
+                if (node === root) { //删除根结点 把左子树代替上去 
+                    if (node.left) {
                         root = node.left;
-                        root.right = node.right;
-                    }else if(node.right){
+                        root.right = node.right; // 原来的right被干掉了 有问题
+                    } else if (node.right) {
                         root = node.right;
-                    }else{
+                    } else {
                         root = null;
-                }
+                    }
 
-                }else{
-                    if(node.left){// 删除的节点有左子树
-                        if(direction === 1){
+                } else {
+                    if (node.left) {// 删除的节点有左子树
+                        if (direction === 1) {
                             parentNode.left = node.left;
-                        }else{
+                        } else {
                             parentNode.right = node.left;
                         }
-                     
-                    }else if(node.right){ // 删除的节点没有左子树有右子树
-                        if(direction === 1){
+
+                    } else if (node.right) { // 删除的节点没有左子树有右子树
+                        if (direction === 1) {
                             parentNode.left = node.right;
-                        }else{
+                        } else {
                             parentNode.right = node.right;
                         }
+                    }else{ //删除叶子节点
+                        
+                        if (direction === 1) {
+                            parentNode.left = null;
+                        } else {
+                            parentNode.right = null;
+                        } 
                     }
                 }
                 return;
             }
             else if (key < node.key) {
-                parentNode =node;
+                parentNode = node;
                 direction = 1;
                 node = node.left;
             }
@@ -153,22 +179,7 @@ function BinarySearchTree() {
     }
 
 
-    /** 添加childnode到node节点上 */
-    this.appendNode = function (node, childnode) {
-        if (childnode.key < node.key) {
-            if (node.left) {
-                this.appendNode(node.left, childnode);
-            } else {
-                node.left = childnode
-            }
-        } else {
-            if (node.right) {
-                this.appendNode(node.right, childnode);
-            } else {
-                node.right = childnode;
-            }
-        }
-    }
+
 
     this.print = function () {
         console.log(root);
@@ -201,9 +212,9 @@ bst.insert(data3);
 bst.insert(data4);
 bst.insert(data5);
 bst.insert(data6);
-bst.print();
+// bst.print();
 console.log(data1, data2, data3, data4, data5, data6);
-bst.remove(data4);
+bst.remove(data5);
 bst.print();
 
 
@@ -211,7 +222,7 @@ bst.print();
 // console.log(data1, data2, data3, data4, data5, data6, '/', data2, bst.search(data2));
 
 // console.log(bst.max(),bst.min());
-// bst.inOrderTraverse();
+bst.inOrderTraverse();
 // console.log('---------------');
 // bst.preOrderTraverse();
 // console.log('---------------');

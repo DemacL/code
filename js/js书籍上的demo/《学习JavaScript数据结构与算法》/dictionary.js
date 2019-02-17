@@ -37,28 +37,30 @@ function MyDictionary() {
     }
 
     this.print = function(){
-        console.table  (items);
+        // console.table  (items);
+        console.log  (items);
+
     }
 }
 
-const data1 = CommonUtils.randomStr();
-const data2 = CommonUtils.randomStr();
-const data3 = CommonUtils.randomStr();
+// const data1 = CommonUtils.randomStr();
+// const data2 = CommonUtils.randomStr();
+// const data3 = CommonUtils.randomStr();
 
-const data4 = CommonUtils.randomStr();
-const data5 = CommonUtils.randomStr();
-const data6 = CommonUtils.randomStr();
-let dic = new MyDictionary();
+// const data4 = CommonUtils.randomStr();
+// const data5 = CommonUtils.randomStr();
+// const data6 = CommonUtils.randomStr();
+// let dic = new MyDictionary();
 
-dic.set('k1',data1);
-dic.set('k2',data1);
-dic.set(data2,data2);
+// dic.set('k1',data1);
+// dic.set('k2',data1);
+// dic.set(data2,data2);
 
-dic.print();
-console.log(dic.has(data1));
-dic.delete(data1);
-dic.print();
+// dic.print();
+// console.log(dic.has(data1));
+// dic.delete(data1);
+// dic.print();
 
-console.log('sss', dic.get(data6));
-console.log(dic.values());
-console.log(dic.keys());
+// console.log('sss', dic.get(data6));
+// console.log(dic.values());
+// console.log(dic.keys());
