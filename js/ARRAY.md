@@ -5,7 +5,7 @@
 ### 方法
 
 * 不改变原数组
-  * slice (start,end) 从已有的数组中返回选定的元素。
+  * slice (start,end) 从已有的数组中返回选定的元素。 [ start, end )
     ``` javascript
     a = [1,2,3];
     b = a.slice(); // [1,2,3]
