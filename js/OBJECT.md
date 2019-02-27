@@ -1,6 +1,6 @@
 ### ```Object.prototype```
 - [hasOwnProperty](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
-  - 用途:用于判断自有属性
+  - 用途:用于判断自有属性 主要用于通过对象实现映射 object to map
   - 通过方法调用可能存在异常情况
     - 没有继承Object
       ``` javascript
