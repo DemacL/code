@@ -1,13 +1,14 @@
 
- 
  #### 去除首尾空格
  ```/^\s*(\S.*\S)\s*$/```;  
  
  #### 获取n个随机数
 ``` javascript
-a=[];for(let i=0;i<18;i++){a.push(Math.ceil(Math.random()*100));}
+a=[];
+for(let i=0;i<18;i++){
+ a.push(Math.ceil(Math.random()*100));
+}
 ```
-#### 生产随机和随机字符串
 
 #### 生产随机和随机字符串
 ``` javascript
