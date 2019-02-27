@@ -15,4 +15,5 @@
   - 解决方案  
     ```  javascript
       Object.prototype.hasOwnProperty.call(obj) 
+     {}.hasOwnProperty.call(obj) //  缩写
     ```
