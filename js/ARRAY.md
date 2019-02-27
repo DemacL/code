@@ -22,11 +22,12 @@
 #### 类数组
 - 和数组比较: 
    - 相同点
-      - 可索引访问元素并且有length属性, 
+      - 都可通过索引访问元素
+      - 都有length属性, 
    - 不同点
       - 没有```Array.prototype```上的方法
 - 例子:
-   - DOM NodeList arguments
+   - DOM NodeList
    - arguments
 - 转数组: 
    - slice // ```Array.prototype.slice.call(domLinks)```
