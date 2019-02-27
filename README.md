@@ -8,3 +8,12 @@ a=[];for(let i=0;i<18;i++){a.push(Math.ceil(Math.random()*100));}
 
 const randomStr = ()=>Math.random().toString(32).substring(2);
 const randomNum = ()=>Math.floor(Math.random() * 100);
+
+
+``` javascript
+var domLinks = document.querySelectorAll('a[href]');
+var links = Array.prototype.slice.call(domLinks);
+links.map(function (link) {
+    return link.href;
+});
+```
