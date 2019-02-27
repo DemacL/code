@@ -31,5 +31,5 @@
    - arguments
 - 转数组: 
    - slice // ```Array.prototype.slice.call(domLinks)```
-   - 扩展运算符 ... // [...domLinks]
-   - Array.from //  Array.from(domLinks)
+   - 扩展运算符 ... // ```[...domLinks]```
+   - Array.from //  ```Array.from(domLinks)```
