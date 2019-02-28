@@ -9,7 +9,7 @@
 
 ### ```Object.prototype```
 - [hasOwnProperty](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
-  - 用途:用于判断自有属性  也可用于通过对象实现映射 object to map
+  - 功能:用于判断自有属性  也可用于通过对象实现映射 object to map
   - 通过方法调用可能存在异常情况
     - 没有继承Object
       ``` javascript
@@ -26,3 +26,7 @@
       Object.prototype.hasOwnProperty.call(obj) 
      {}.hasOwnProperty.call(obj) //  缩写
     ```
+    
+### 静态方法
+  - [Object.assign](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+    - 功能:用于将所有可枚举属性的值从一个或多个源对象复制到目标对象。它将返回目标对象。
