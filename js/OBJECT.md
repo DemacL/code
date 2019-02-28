@@ -60,3 +60,12 @@
        ```
      - 使用场景
        - 默认值处理
+  - [Object.is](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/is) 
+    - 基本与 ```===```强制等于一致,更加严格的等于比较
+    - 在处理NaN 和+0、-0上有差别 
+      ``` js
+        NaN === NaN // false
+        Object.is(NaN,NaN)// true
+        +0 === -0 // true
+        Object.is(+0,-0) // false
+      ```
