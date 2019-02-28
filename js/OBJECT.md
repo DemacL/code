@@ -69,3 +69,11 @@
         +0 === -0 // true
         Object.is(+0,-0) // false
       ```
+ - [Object.setPrototypeOf](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf) 
+   - 设置对象的原型对象
+    ``` js
+      parentObj = {parentProp:'parentValue'}
+      childObj = {childProp:'childValue'}
+      Object.setPrototypeOf(childObj,parentObj)
+      childObj.parentProp //  parentValue
+    ```
