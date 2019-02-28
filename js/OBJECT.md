@@ -1,7 +1,7 @@
 ## [Object](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 ### 概览
-  - 方法定义
+  - 方法定义 在属性为传统函数的情况下省略 ```: function```
   - 属性缩写
   - 计算属性 ```Symbol```
 
