@@ -13,6 +13,8 @@
        a.slice(1); // [2,3]
        a.slice(1,2); // [2]
        ```
+   - [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) 创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果。       
+      - 可以动态传入this
 - 改变原数组
   
 
