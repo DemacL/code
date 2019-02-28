@@ -46,3 +46,15 @@
         copyObj = Object.assign({},obj) // 只复制了prop1属性
       ```
      - 不会拷贝源对象的getter setter,会在拷贝的过程执行对应的getter setter
+       ``` js
+        obj = {
+          get prop() {
+            console.log('get prop func');
+            return 'v from get';
+          },
+          set prop(v){
+                console.log('set prop func');
+            return v;
+          }
+        }
+       ```
