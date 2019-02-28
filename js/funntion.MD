@@ -26,4 +26,6 @@
     arr.map(x=>x*x) //  [1, 4, 9]
     arr.map(function(x){return x*x}) //  [1, 4, 9]
    ```
+   - this 绑定词法作用于/静态this
+   
 
