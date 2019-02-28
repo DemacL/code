@@ -40,8 +40,8 @@
         copyObj = Object.assign({},childObj); // 只复制了childProp属性
       ```
     - 只能复制可枚举属性,不能复制不可枚举属性enumerable
-    ``` js
-      obj = {prop1:'enumerable', prop2:'not enumerable'}
-      Object.defineProperty(obj,'prop2',{enumerable:false})
-      copyObj = Object.assign({},obj) // 只复制了prop1属性
-    ```
+      ``` js
+        obj = {prop1:'enumerable', prop2:'not enumerable'}
+        Object.defineProperty(obj,'prop2',{enumerable:false})
+        copyObj = Object.assign({},obj) // 只复制了prop1属性
+      ```
