@@ -1,3 +1,10 @@
+### 概览
+  - 方法定义
+  - 属性缩写
+  - 计算属性
+
+
+
 ### ```Object.prototype```
 - [hasOwnProperty](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
   - 用途:用于判断自有属性  也可用于通过对象实现映射 object to map
