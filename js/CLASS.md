@@ -29,4 +29,6 @@
   animal instanceof Dog // false
   dog instanceof Animal // true
   dog instanceof Dog // true
+  typeof Animal // "function"
+  typeof Dog // "function"
   ```
