@@ -38,3 +38,4 @@
     ``` js
     Animal('xtq') //  Uncaught TypeError: Class constructor Animal cannot be invoked without 'new'
     ```
+  - 函数提升hoist,Class不提升
