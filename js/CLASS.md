@@ -32,3 +32,9 @@
   typeof Animal // "function"
   typeof Dog // "function"
   ```
+  
+### Class与构造函数比较
+  - Class需要与new搭配使用,不能通过函数调用
+    ``` js
+    Animal('xtq') //  Uncaught TypeError: Class constructor Animal cannot be invoked without 'new'
+    ```
