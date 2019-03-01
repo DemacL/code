@@ -45,7 +45,7 @@
         Object.defineProperty(obj,'prop2',{enumerable:false})
         copyObj = Object.assign({},obj) // 只复制了prop1属性
       ```
-     - 不会拷贝源对象的getter setter,会在拷贝的过程执行对应的getter setter
+     - 不会拷贝源对象的getter setter,会在拷贝的过程执行源对象的getter和目标对象的setter
        ``` js
         obj = {
           get prop() {
