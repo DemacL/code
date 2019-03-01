@@ -31,6 +31,8 @@
   dog instanceof Dog // true
   typeof Animal // "function"
   typeof Dog // "function"
+  
+  Object.getPrototypeOf(Dog) === Animal // true
   ```
   
 ### Class与构造函数比较
