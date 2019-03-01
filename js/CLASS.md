@@ -21,8 +21,12 @@
       console.log(`Dog:${this.type},${this.name}`)
     }
   }
-  dog = new Animal('xtq')
-  dog.info() // xtq
-  mdog = new Dog('xtq','teddy')
-  mdog.info() //  Dog:teddy,xtq
+  animal = new Animal('xtq')
+  animal.info() // xtq
+  dog = new Dog('xtq','teddy')
+  dog.info() //  Dog:teddy,xtq
+  animal instanceof Animal// true
+  animal instanceof Dog // false
+  dog instanceof Animal // true
+  dog instanceof Dog // true
   ```
