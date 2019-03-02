@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="vc5">
+        <h1>基于视口单位的结局方案</h1>
+        <p>margin: 50vh</p>
+        <p>自身宽高无要求</p>
+        <p>局限:只适应与视口中居中的场景</p>
+    </div>
+
+
+
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .vc5-parent {
+        background-color: tomato;
+        margin-top: 1em;
+        height: 500px;
+
+        /* position: relative; */
+    }
+
+    .vc5 {
+        text-align: center;
+        background-color: #666;
+        /* margin: 0 auto; */
+        padding-top: 60px;
+
+        /* 基于变形 */
+        height: 160px;
+        width: 700px;
+        margin: 50vh auto 0;
+        transform: translateY(-50%);
+    }
+</style>
+
+
+</html>
