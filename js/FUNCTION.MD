@@ -16,3 +16,17 @@
       cat = {getName,name:'cat'}; 
       console.log(dog.getName(),cat.getName()) // dog cat
        ```
+
+
+## 箭头函数
+- 与传统函数比较
+   - 语法更简洁
+   ``` js
+    arr = [1, 2, 3];
+    arr.map(x=>x*x) //  [1, 4, 9]
+    arr.map(function(x){return x*x}) //  [1, 4, 9]
+   ```
+   - this 绑定词法作用域/静态this/ 与周围的作用域this保持一致
+   - 箭头函数不能作为构造函数给new调用
+   
+

@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="hc1">
+        <span>
+            行内元素水平居中:在父元素设置text-align: center;
+        </span>
+    </div>
+
+    <div class="hc2">
+        块级元素元素水平居中:在自身元素设置margin: 0 auto;
+    </div>
+
+
+    <div class="vc1-parent">
+        <div class="vc1">
+            <h1>垂直居中内容1</h1>
+            <p>垂直居中内容2</p>
+        </div>
+    </div>
+
+    <div class="vc2-parent">
+        <div class="vc2">
+            <h1>基于绝对定位的结局方案</h1>
+            <p>局限:要求自身宽高固定</p>
+            <p>局限:使用绝对定位 </p>
+        </div>
+    </div>
+
+
+    <div class="vc3-parent">
+        <div class="vc3">
+            <h1>基于绝对定位的结局方案,使用calc函数</h1>
+            <p>calc(50% - 300px);// 对应宽高的一半</p>
+            <p>局限:要求自身宽高固定 </p>
+            <p>局限:使用绝对定位 </p>
+        </div>
+    </div>
+
+    <div class="vc4-parent">
+        <div class="vc4">
+            <h1>基于变形translate的结局方案</h1>
+            <p>transform: translate(-50%, -50%)</p>
+            <p>优点:自身宽高无要求</p>
+            <p>局限:使用绝对定位</p>
+        </div>
+    </div>
+
+
+    <div class="vc5-parent">
+        <div class="vc5">
+            <h1>基于Flexbox的结局方案</h1>
+            <p>容器元素align-items: center; justify-content: center;</p>
+            <p>自身宽高无要求</p>
+        </div>
+    </div>
+
+
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hc1 {
+        background: fuchsia;
+        text-align: center;
+    }
+
+
+    .hc2 {
+        background: fuchsia;
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .vc1-parent {
+        background-color: #ffa500c7;
+        margin-top: 1em;
+        height: 500px;
+    }
+
+    .vc1 {
+        text-align: center;
+        background-color: #666;
+        height: 100px;
+        width: 600px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .vc2-parent {
+        background-color: slateblue;
+        margin-top: 1em;
+        height: 500px;
+
+        position: relative;
+    }
+
+    .vc2 {
+        text-align: center;
+        background-color: #666;
+        margin: 0 auto;
+        padding-top: 30px;
+
+        /* 基于绝对定位需要元素已知固定的宽高*/
+        height: 100px;
+        width: 600px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -300px;
+        margin-top: -50px;
+    }
+
+    .vc3-parent {
+        background-color: blueviolet;
+        margin-top: 1em;
+        height: 500px;
+
+        position: relative;
+    }
+
+    .vc3 {
+        text-align: center;
+        background-color: #666;
+        margin: 0 auto;
+        padding-top: 30px;
+
+        /* 基于绝对定位需要元素已知固定的宽高*/
+        height: 120px;
+        width: 600px;
+
+        position: absolute;
+        top: calc(50% - 60px);
+        left: calc(50% - 300px);
+        /* top: 50%;
+        left: 50%;
+        margin-left: -300px;
+        margin-top: -50px; */
+    }
+
+    .vc4-parent {
+        background-color: deepskyblue;
+        margin-top: 1em;
+        height: 500px;
+
+        position: relative;
+    }
+
+    .vc4 {
+        text-align: center;
+        background-color: #666;
+        margin: 0 auto;
+        padding-top: 60px;
+
+        /* 基于变形 */
+        height: 160px;
+        width: 700px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .vc5-parent {
+        background-color: lightslategrey;
+        margin-top: 1em;
+        height: 500px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vc5 {
+        text-align: center;
+        background-color: #666;
+        height: 160px;
+        width: 700px;
+        padding-top: 60px;
+ 
+        /* margin :auto; */
+    }
+</style>
+
+
+</html>
