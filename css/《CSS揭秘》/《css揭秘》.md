@@ -10,7 +10,7 @@
  * linear-gradient([ [ <angle> | to <side-or-corner> ] ,]? <color-stop>[, <color-stop>]+)
  * radial-gradient([ [ <shape> || <size> ] [ at <position> ]? , | at <position>, ]?<color-stop>[ , <color-stop> ]+)
 
- ### box-shadow: h-shadow v-shadow blur spread color inset;
+ ### box-shadow: h-shadow v-shadow blur spread color
 * h-shadow	必需。水平阴影的位置。允许负值。	 
 * v-shadow	必需。垂直阴影的位置。允许负值。	 
 * blur	可选。模糊距离 模糊半径。	 
