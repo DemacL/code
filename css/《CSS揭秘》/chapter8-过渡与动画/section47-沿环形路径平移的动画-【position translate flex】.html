@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="path1">
+        <img class="img1" src="./../images/avatar.jpg" alt="demacl">
+    </div>
+
+
+    <div class="path2">
+        <div class="avatar">
+            <img src="./../images/avatar.jpg" alt="demacl">
+        </div>
+
+    </div>
+
+    <div class="path3">
+        <div class="avatar1">
+            <img src="./../images/avatar.jpg" alt="demacl">
+        </div>
+    </div>
+
+
+    <div class="path4">
+        <div class="avatar1">
+            <img src="./../images/avatar.jpg" alt="demacl">
+        </div>
+    </div>
+
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .path1 {
+        width: 300px;
+        height: 300px;
+        background: orange;
+        border-radius: 50%;
+
+        text-align: center;
+        padding: .5em;
+        display: inline-block;
+    }
+
+
+
+    @keyframes spin {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+
+    .img1 {
+        border-radius: 50%;
+        /* margin-top: .5em; */
+        animation: spin 3s infinite linear;
+        transform-origin: 50% 150px;
+    }
+
+
+    .path2 {
+        width: 300px;
+        height: 300px;
+        background: orange;
+        border-radius: 50%;
+
+        text-align: center;
+        padding: .5em;
+        display: inline-block;
+    }
+
+
+
+    /* @keyframes spin2 {
+        to {
+            transform: rotate(1turn);
+        }
+    } */
+
+    @keyframes spin-reverse {
+        from {
+            transform: rotate(1turn);
+        }
+    }
+
+    .avatar {
+        animation: spin 3s infinite linear;
+        transform-origin: 50% 150px;
+    }
+
+    .avatar>img {
+        border-radius: 50%;
+        animation: spin-reverse 3s infinite linear;
+    }
+
+
+    .path3 {
+        width: 300px;
+        height: 300px;
+        background: orange;
+        border-radius: 50%;
+
+        text-align: center;
+        padding: .5em;
+        display: inline-block;
+    }
+
+    .avatar1 {
+        animation: spin 3s infinite linear;
+        transform-origin: 50% 150px;
+    }
+
+    .avatar1>img {
+        border-radius: 50%;
+        animation: inherit;
+        /* 动画可以继承 */
+        animation-name: spin-reverse;
+    }
+
+
+    .path4 {
+        width: 300px;
+        height: 300px;
+        background: orange;
+        border-radius: 50%;
+        text-align: center;
+        padding: .5em;
+        display: inline-block;
+    }
+
+    .avatar1 {
+        animation: spin 3s infinite linear;
+        transform-origin: 50% 150px;
+    }
+    
+    .avatar1>img {
+        border-radius: 50%;
+        animation: inherit;
+        /* 动画可以继承 */
+        animation-direction: reverse;
+        /* 不用创建一套新动画 */
+    }
+</style>
+
+
+</html>

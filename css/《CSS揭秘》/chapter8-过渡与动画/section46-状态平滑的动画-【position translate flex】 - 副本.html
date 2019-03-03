@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img class="img img1">
+    <img class="img img2">
+
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    @keyframes key1 {
+        to {
+            background-position: 100% 0;
+        }
+    }
+
+
+    .img {
+        width: 500px;
+        height: 500px;
+        background: url("./../images/Antibes, France (4).jpg");
+        background-size: auto 100%;
+    }
+
+    .img1 {
+        animation: key1 10s linear infinite alternate;
+    }
+
+    .img2 {
+        animation: key1 10s linear infinite alternate;
+        animation-play-state: paused;
+    }
+
+    .img2:hover,
+    .img2:focus {
+        animation-play-state: running;
+    }
+</style>
+
+
+</html>
