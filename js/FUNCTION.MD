@@ -16,7 +16,9 @@
       cat = {getName,name:'cat'}; 
       console.log(dog.getName(),cat.getName()) // dog cat
        ```
-
+## 函数相关
+- new.target 可用于区分函数是通过new调用还是函数调用
+  
 
 ## 箭头函数
 - 与传统函数比较
@@ -28,5 +30,8 @@
    ```
    - this 绑定词法作用域/静态this/ 与周围的作用域this保持一致
    - 箭头函数不能作为构造函数给new调用
+   
+   
+   
    
 
