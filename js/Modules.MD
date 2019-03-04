@@ -44,6 +44,7 @@ console.log(diag(4, 3)); // 5
   ``` js
     //------ myFunc.js ------
     export default function () {} // no semicolon!  可以省略函数名  唯一可以匿名函数声明的地方
+    // export default (function () {}); 这行理解为函数表达式 上一行理解为函数声明
     //------ main1.js ------
     import myFunc from 'myFunc';
     myFunc();
