@@ -43,7 +43,7 @@ console.log(diag(4, 3)); // 5
   - default exports 默认导出: 一个文件最多只能导出一个
   ``` js
     //------ myFunc.js ------
-    export default function () {} // no semicolon!  可以省略函数名
+    export default function () {} // no semicolon!  可以省略函数名  唯一可以匿名函数声明的地方
     //------ main1.js ------
     import myFunc from 'myFunc';
     myFunc();
