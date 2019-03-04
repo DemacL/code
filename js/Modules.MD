@@ -58,7 +58,7 @@ console.log(diag(4, 3)); // 5
     console.log(square(11)); // 121
     console.log(diag(4, 3)); // 5
   ```
-  - 全部导入:通过变量名引用整个导出内容
+  - 命名空间导入:将模块作为对象导入(每个命名导出具有一个属性)。
   ``` js
     //------ main.js ------
     import * as lib from 'lib';
