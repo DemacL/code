@@ -54,6 +54,12 @@ console.log(diag(4, 3)); // 5
   ``` js
     import { default as foo } from 'lib';
     import foo from 'lib';  
+    
+    //------ module1.js ------
+    export default function foo() {} // function declaration!
+    //------ module2.js ------
+    function foo() {}
+    export { foo as default };
   ```
   - 两种导出方式可以同时使用，建议分开使用。
 - imports 导入
