@@ -77,3 +77,9 @@
       Object.setPrototypeOf(childObj,parentObj)
       childObj.parentProp //  parentValue
     ```
+ 
+ - [Object.getPrototypeOf](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf) 
+   - 获取对象的原型对象
+    ``` js
+       Object.getPrototypeOf({}) === Object.prototype // true
+    ```
