@@ -3,7 +3,7 @@
 
 ### CommonJS 
 - Node.js
-```
+``` js
 //------ lib.js ------
 var sqrt = Math.sqrt;
 function square(x) {
