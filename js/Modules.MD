@@ -43,7 +43,7 @@ console.log(diag(4, 3)); // 5
   - default exports 默认导出: 一个文件最多只能导出一个
   ``` js
     //------ myFunc.js ------
-    export default function () {} // no semicolon!
+    export default function () {} // no semicolon!  可以省略函数名
     //------ main1.js ------
     import myFunc from 'myFunc';
     myFunc();
@@ -58,9 +58,9 @@ console.log(diag(4, 3)); // 5
   ```
   - 全部导入:通过变量名引用整个导出内容
   ``` js
-  //------ main.js ------
-  import * as lib from 'lib';
-  console.log(lib.square(11)); // 121
-  console.log(lib.diag(4, 3)); // 5
+    //------ main.js ------
+    import * as lib from 'lib';
+    console.log(lib.square(11)); // 121
+    console.log(lib.diag(4, 3)); // 5
   ```
   
