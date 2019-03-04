@@ -41,7 +41,13 @@ console.log(diag(4, 3)); // 5
   }
   ```
   - default exports 默认导出: 一个文件最多只能导出一个
-
+  ``` js
+    //------ myFunc.js ------
+    export default function () {} // no semicolon!
+    //------ main1.js ------
+    import myFunc from 'myFunc';
+    myFunc();
+  ```
 - imports 导入
   - 命名导入
   ``` js
