@@ -50,7 +50,7 @@ console.log(diag(4, 3)); // 5
     import myFunc from 'myFunc';
     myFunc();
   ```
-  - 两种导出方式可以同时使用,建议分开使用。
+  - 两种导出方式可以同时使用，建议分开使用。
 - imports 导入
   - 命名导入
   ``` js
