@@ -50,7 +50,7 @@ console.log(diag(4, 3)); // 5
     import myFunc from 'myFunc';
     myFunc();
   ```
-  - 默认导出是一种名称为default的命名导出
+  - 默认导出是一种名称为default的命名导出 如下两种方式等效
   ``` js
     import { default as foo } from 'lib';
     import foo from 'lib';  
