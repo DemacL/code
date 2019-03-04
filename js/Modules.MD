@@ -28,6 +28,7 @@ console.log(diag(4, 3)); // 5
 - RequireJS
 
 ### ES6
+- Imports and exports must be at the top level
 - exports导出
   - named exports 命名导出: 一个文件可以导出多个
   ``` js
