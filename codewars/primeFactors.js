@@ -1,4 +1,3 @@
-``` js
 function primeFactors(n) {
     // 判断素数的工具方法
     let isPrime = (num) => {
@@ -40,4 +39,3 @@ function primeFactors(n) {
 console.log(primeFactors(8));// (2**3)
 console.log(primeFactors(123456)); // (2**6)(3)(643)
 
-```
