@@ -8,4 +8,11 @@
   - [codewars](https://www.codewars.com/kata/557f6437bf8dcdd135000010/train/javascript)
   - [wikipedia](https://en.wikipedia.org/wiki/Factorial)
   
+  
+  
+  
+  ### 未解决
+   - [Currying 无限参数的柯里化]
+    - [codewars](https://www.codewars.com/kata/a-chain-adding-function)
+    - [wikipedia](https://en.wikipedia.org/wiki/Currying)
 
