@@ -10,9 +10,8 @@
   
   
   
-  
-  ### 未解决
-   - [Currying 无限参数的柯里化]
-    - [codewars](https://www.codewars.com/kata/a-chain-adding-function)
-    - [wikipedia](https://en.wikipedia.org/wiki/Currying)
+ ### UN
+- [Currying 无限参数的柯里化]
+  - [codewars](https://www.codewars.com/kata/a-chain-adding-function)
+  - [wikipedia](https://en.wikipedia.org/wiki/Currying)
 
