@@ -2,6 +2,7 @@
 ## [Module](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import)
 
 ### CommonJS 
+- 可动态条件导入
 - Node.js
 ``` js
 //------ lib.js ------
