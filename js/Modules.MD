@@ -35,6 +35,8 @@ console.log(diag(4, 3)); // 5
 - Imports and exports must be at the top level
 - Support for cyclic dependencies between modules 支持循环依赖
 - You can only import and export at the top level (never nested inside a conditional statement). 顶层导入不能嵌入条件语句
+- 静态导入
+    - 易于优化代码删除未使用模块
 - exports导出
   - named exports 命名导出: 一个文件可以导出多个
   ``` js
