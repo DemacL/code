@@ -33,6 +33,7 @@ console.log(diag(4, 3)); // 5
 - In ES6, imports are live read-only views on exported values  对导出内容的只读视图 保持连接
 - Imports and exports must be at the top level
 - Support for cyclic dependencies between modules 支持循环依赖
+- You can only import and export at the top level (never nested inside a conditional statement). 顶层导入不能嵌入条件语句
 - exports导出
   - named exports 命名导出: 一个文件可以导出多个
   ``` js
