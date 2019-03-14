@@ -24,12 +24,13 @@ console.log(square(11)); // 121
 console.log(diag(4, 3)); // 5
 ```
 - In CommonJS, imports are copies of exported values 
-- The imported value is a (disconnected) copy of a copy
+- The imported value is a (disconnected) copy of a copy 对内容导出一次,失去联系
 
 ### AMD(Asynchronous Module Definition)
 - RequireJS
 
 ### ES6
+- In ES6, imports are live read-only views on exported values  对导出内容的只读视图 保持连接
 - Imports and exports must be at the top level
 - exports导出
   - named exports 命名导出: 一个文件可以导出多个
