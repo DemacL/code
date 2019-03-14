@@ -35,6 +35,9 @@ console.log(diag(4, 3)); // 5
 - Imports and exports must be at the top level
 - Support for cyclic dependencies between modules 支持循环依赖
 - You can only import and export at the top level (never nested inside a conditional statement). 顶层导入不能嵌入条件语句
+- More compact syntax
+- Static module structure (helping with dead code elimination, optimizations, static checking and more)
+- Automatic support for cyclic dependencies
 - 静态导入
     - 易于优化代码删除未使用模块
 - exports导出
