@@ -23,6 +23,8 @@ var diag = require('lib').diag;
 console.log(square(11)); // 121
 console.log(diag(4, 3)); // 5
 ```
+- In CommonJS, imports are copies of exported values 
+- The imported value is a (disconnected) copy of a copy
 
 ### AMD(Asynchronous Module Definition)
 - RequireJS
