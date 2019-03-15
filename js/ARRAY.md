@@ -1,8 +1,16 @@
 
+### 静态(static)方法
+-  [Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+   - 将类数组或者可迭代对象转化为数组
+   - Array.from()’s basic functionality is to convert two kinds of values to Arrays:  
+   Array-like values, which have a property length and indexed elements. Examples include the results of DOM operations such as document.getElementsByClassName().  
+   Iterable values, whose contents can be retrieved one element at a time. Strings and Arrays are iterable, as are ECMAScript’s new data structures Map and Set.
+-  [Array.of()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of)
+   - 根据参数串构造一个数组
 
 
 
-### 方法
+### 原型(prototype)方法
 
 - 不改变原数组
    -  [slice](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) (start,end) 从已有的数组中返回选定的元素。 [ start, end )
