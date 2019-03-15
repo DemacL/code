@@ -40,3 +40,12 @@
 - [forEach](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 - [for in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in)
 - [for of](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...of)
+   - 用于遍历可迭代iterable 对象Arrays, strings, Maps, Sets...
+   - break continue 可用于控制循环
+   - 可用解构解析项
+      ``` js
+      const arr = ['a', 'b'];
+      for (const [index, element] of arr.entries()) {
+         console.log(`${index}. ${element}`);
+      }
+      ```
