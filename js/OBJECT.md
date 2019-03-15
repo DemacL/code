@@ -68,6 +68,10 @@
         Object.is(NaN,NaN)// true
         +0 === -0 // true
         Object.is(+0,-0) // false
+        
+        [NaN].findIndex(y => Object.is(NaN, y))//0 
+        [NaN].findIndex(y => y===NaN)//-1 
+        [NaN].indexOf(NaN) //-1
       ```
  - [Object.setPrototypeOf](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf) 
    - 设置对象的原型对象
