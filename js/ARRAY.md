@@ -35,3 +35,8 @@
    - slice // ```Array.prototype.slice.call(domLinks)```
    - 扩展运算符 ... // ```[...domLinks]```
    - Array.from //  ```Array.from(domLinks)```
+
+### 集合遍历
+- [forEach](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+- [for in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in)
+- [for of](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...of)
