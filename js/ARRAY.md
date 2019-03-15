@@ -38,10 +38,10 @@
 
 ### 集合遍历
 - [forEach](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-- [for in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in)
-- [for of](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...of)
+- [for...in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in)
+- [for...of](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...of)
    - 用于遍历可迭代iterable 对象Arrays, strings, Maps, Sets...
-   - break continue 可用于控制循环
+   - break continue 可用于控制迭代
    - 可用解构解析项
       ``` js
       const arr = ['a', 'b'];
@@ -49,3 +49,4 @@
          console.log(`${index}. ${element}`);
       }
       ```
+   - 只能用于可迭代对象，类数组需要转化为数组后才能使用for...of
