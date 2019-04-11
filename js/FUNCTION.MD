@@ -28,7 +28,7 @@
     - 所有实际参数组成的 __类数组__
 
 ## 函数调用四种方式
-- *函数*： 函数直接调用  `functionName()` window充当了方法调用的obj 严格模式下
+- *函数*： 函数直接调用  `functionName()` window充当了方法调用的obj 严格模式下没有this
 - *方法*： 作为对象的方法调用 `obj.functionName()`
 - *构造器*： 作为构造器调用 返回一个对象  `new FunctionName()`
 - *apply call*：  `functionName.call(newThis,,,,,)   functionName.call(newThis, [])`
