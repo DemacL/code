@@ -24,6 +24,7 @@
       cat = {getName,name:'cat'}; 
       console.log(dog.getName(),cat.getName()) // dog cat
        ```
+     - 函数是一个单独的存在,作为对象的属性时候相当于关联到这个对象属性上了,并不是说这个方法只属于这个对象
   - arguments
     - 所有实际参数组成的 __类数组__
 
