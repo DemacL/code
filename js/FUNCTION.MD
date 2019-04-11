@@ -30,8 +30,11 @@
 
 ## 函数调用四种方式
 - *函数*： 函数直接调用  `functionName()` window充当了方法调用的obj 严格模式下没有this
+  - 小写动词
 - *方法*： 作为对象的方法调用 `obj.functionName()`
+  - 小写动词
 - *构造器*： 作为构造器调用 返回一个对象  `new FunctionName()`
+  - 大写名字
 - *apply call*：  `functionName.call(newThis,,,,,)   functionName.call(newThis, [])`
 ## 函数相关
 - new.target 可用于区分函数是通过new调用还是函数调用
