@@ -9,6 +9,10 @@
     ``` js
       const f2 = function (){}
   ````
+## 函数参数
+- 隐式参数
+  - this
+  - arguments
 
 ## 函数调用四种方式
 - *函数*： 函数直接调用  `functionName()`
