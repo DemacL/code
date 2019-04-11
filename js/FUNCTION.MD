@@ -14,6 +14,7 @@
   - this
     - 隐式关联的一个对象
     - 函数上下文 function context
+    - 面向对象语言中this指的调用方法所在类的一个实例
   - arguments
     - 所有实际参数组成的 __类数组__
 
