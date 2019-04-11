@@ -12,6 +12,8 @@
 ## 函数参数
 - 隐式参数
   - this
+    - 隐式关联的一个对象
+    - 函数上下文 function context
   - arguments
     - 所有实际参数组成的 __类数组__
 
