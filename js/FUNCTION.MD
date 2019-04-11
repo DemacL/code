@@ -1,3 +1,15 @@
+## 函数声明
+- 函数声明
+  - 定义会提升 hoist
+  ``` js
+    function f1(){}
+  ````
+- 函数表达式
+   - 定义不会提升
+    ``` js
+      const f2 = function (){}
+  ````
+
 ## 函数调用四种方式
 - *函数*： 函数直接调用  `functionName()`
 - *方法*： 作为对象的方法调用 `obj.functionName()`
