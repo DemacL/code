@@ -21,7 +21,14 @@ const dUtil = (() => {
         return  array.reduce((map, item) => { map.set(item,(map.get(item) || 0) + 1); return map }, new Map())
     }
     
+        /** 获取大写字母组成的字符串*/
+    util.getUpperCase = function (){
+        return   Array.from({length:26}).map((x,index)=>String.fromCharCode(65+index)).join('')
+    }
+    
  
+    
+   
 
     return util
 })();
