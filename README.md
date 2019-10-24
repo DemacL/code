@@ -11,6 +11,9 @@ for(let i=0;i<18;i++){
  a.push(Math.ceil(Math.random()*100));
 }
 ```
+``` javascript
+ts = Array.from({ length: 20 }, () => Math.floor(Math.random() * 100))
+```
 
 #### 生产随机和随机字符串
 ``` javascript
